@@ -82,25 +82,28 @@ body {
   z-index: 2;
 }
 .content .countdown {
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
 }
 .content .countdown h1 {
-  font-size: 56px;
+  font-size: 100px;
+  margin-block-end: 0;
+  margin-block-start: 0;
 }
 .content .description {
   text-align: center;
-  margin: 10px 250px 10px;
+  margin: 30px 250px;
 }
 .content .description p {
   font-size: 18px;
+  margin-block-end: 0;
+  margin-block-start: 0;
   padding: 0 150px 0;
 }
 .content .contact {
   display: flex;
   justify-content: center;
   gap: 200px;
-  padding: 20px;
 }
 .content .contact a {
   color: white;

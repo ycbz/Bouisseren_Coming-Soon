@@ -21,8 +21,20 @@ $animation-duration: calc(#{$total-duration} * 4);
     }
 }
 
+@mixin width-1280px {
+    @media (max-width: 1280px) {
+        @content;
+    }
+}
+
 @mixin small-laptop {
     @media (max-width: 1024px) and (max-height: 768px) {
+        @content;
+    }
+}
+
+@mixin width-780px {
+    @media (max-width: 780px) {
         @content;
     }
 }
@@ -263,6 +275,10 @@ body {
                 margin: 10px 50px;
             }
 
+            @include width-780px {
+                margin: 10px 0px;
+            }
+
             @include small-tablet {
                 margin: 10px 0px;
             }
@@ -277,8 +293,17 @@ body {
                     font-size: 16px;
                 }
 
+                @include width-1280px {
+                    padding: 0;
+                }
+
                 @include standard-tablet {
                     font-size: 14px;
+                    padding: 0;
+                }
+
+                @include width-780px {
+                    padding: 0;
                 }
 
                 @include large-phone {
@@ -304,6 +329,14 @@ body {
 
             @include standard-laptop {
                 gap: 80px;
+            }
+
+            @include width-1280px {
+                gap: 40px;
+            }
+
+            @include width-780px {
+                gap: 40px;
             }
 
             @include small-laptop {
@@ -338,6 +371,10 @@ body {
                     font-size: 14px;
                 }
 
+                @include width-780px {
+                    font-size: 14px;
+                }
+
                 @include large-phone {
                     font-size: 12px;
                 }
@@ -360,6 +397,10 @@ body {
 
                 @include standard-tablet {
                     padding: 10px;
+                }
+
+                @include width-780px {
+                    padding: 5px;
                 }
 
                 @include small-phone {
@@ -406,6 +447,10 @@ body {
                         margin-top: 10px;
                     }
 
+                    @include width-780px {
+                        margin-top: 10px;
+                    }
+
                     @include large-phone {
                         margin-top: 5px;
                     }
@@ -429,6 +474,10 @@ body {
             padding: 0 50px;
         }
 
+        @include width-780px {
+            padding: 0 10px;
+        }
+
         @include large-phone {
             gap: 5px;
             padding: 0 10px;
@@ -438,6 +487,10 @@ body {
             border-bottom: solid 4px #fff;
             height: auto;
             width: 20vw;
+
+            @include width-780px {
+                border-bottom: solid 2px #fff;
+            }
 
             @include large-phone {
                 border-bottom: solid 2px #fff;

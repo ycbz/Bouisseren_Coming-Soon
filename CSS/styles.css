@@ -201,6 +201,11 @@ body {
     margin: 10px 50px;
   }
 }
+@media (max-width: 780px) {
+  .content-center .description {
+    margin: 10px 0px;
+  }
+}
 @media (max-width: 600px) and (max-height: 1024px) {
   .content-center .description {
     margin: 10px 0px;
@@ -217,9 +222,20 @@ body {
     font-size: 16px;
   }
 }
+@media (max-width: 1280px) {
+  .content-center .description p {
+    padding: 0;
+  }
+}
 @media (max-width: 768px) and (max-height: 1024px) {
   .content-center .description p {
     font-size: 14px;
+    padding: 0;
+  }
+}
+@media (max-width: 780px) {
+  .content-center .description p {
+    padding: 0;
   }
 }
 @media (max-width: 414px) and (max-height: 736px) {
@@ -246,6 +262,16 @@ body {
 @media (max-width: 1280px) and (max-height: 800px) {
   .content-center .contact {
     gap: 80px;
+  }
+}
+@media (max-width: 1280px) {
+  .content-center .contact {
+    gap: 40px;
+  }
+}
+@media (max-width: 780px) {
+  .content-center .contact {
+    gap: 40px;
   }
 }
 @media (max-width: 1024px) and (max-height: 768px) {
@@ -286,6 +312,11 @@ body {
     font-size: 14px;
   }
 }
+@media (max-width: 780px) {
+  .content-center .contact a {
+    font-size: 14px;
+  }
+}
 @media (max-width: 414px) and (max-height: 736px) {
   .content-center .contact a {
     font-size: 12px;
@@ -311,6 +342,13 @@ body {
   .content-center .contact .phone,
   .content-center .contact .place {
     padding: 10px;
+  }
+}
+@media (max-width: 780px) {
+  .content-center .contact .mail,
+  .content-center .contact .phone,
+  .content-center .contact .place {
+    padding: 5px;
   }
 }
 @media (max-width: 320px) and (max-height: 480px) {
@@ -387,6 +425,13 @@ body {
     margin-top: 10px;
   }
 }
+@media (max-width: 780px) {
+  .content-center .contact .mail-link,
+  .content-center .contact .phone-link,
+  .content-center .contact .place-link {
+    margin-top: 10px;
+  }
+}
 @media (max-width: 414px) and (max-height: 736px) {
   .content-center .contact .mail-link,
   .content-center .contact .phone-link,
@@ -412,6 +457,11 @@ body {
     padding: 0 50px;
   }
 }
+@media (max-width: 780px) {
+  .content .carousel {
+    padding: 0 10px;
+  }
+}
 @media (max-width: 414px) and (max-height: 736px) {
   .content .carousel {
     gap: 5px;
@@ -422,6 +472,11 @@ body {
   border-bottom: solid 4px #fff;
   height: auto;
   width: 20vw;
+}
+@media (max-width: 780px) {
+  .content .carousel .line {
+    border-bottom: solid 2px #fff;
+  }
 }
 @media (max-width: 414px) and (max-height: 736px) {
   .content .carousel .line {

@@ -81,65 +81,67 @@ body {
   padding: 75px;
   z-index: 2;
 }
-.content .countdown {
+.content-center {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+.content-center .countdown {
   margin-top: 50px;
   text-align: center;
 }
-.content .countdown h1 {
+.content-center .countdown h1 {
   font-size: 100px;
   margin-block-end: 0;
   margin-block-start: 0;
 }
-.content .description {
+.content-center .description {
   text-align: center;
   margin: 30px 250px;
 }
-.content .description p {
+.content-center .description p {
   font-size: 18px;
   margin-block-end: 0;
   margin-block-start: 0;
   padding: 0 150px 0;
 }
-.content .contact {
+.content-center .contact {
   display: flex;
   justify-content: center;
   gap: 200px;
 }
-.content .contact a {
+.content-center .contact a {
   color: white;
 }
-.content .contact a p {
+.content-center .contact a p {
   margin-block-start: 0;
   margin-block-end: 0;
 }
-.content .contact .mail,
-.content .contact .phone,
-.content .contact .place {
+.content-center .contact .mail,
+.content-center .contact .phone,
+.content-center .contact .place {
   padding: 20px;
   text-align: center;
 }
-.content .contact .mail-icon,
-.content .contact .phone-icon,
-.content .contact .place-icon {
+.content-center .contact .mail-icon,
+.content-center .contact .phone-icon,
+.content-center .contact .place-icon {
   font-size: 50px;
   margin: 5px;
 }
-.content .contact .mail-link,
-.content .contact .phone-link,
-.content .contact .place-link {
+.content-center .contact .mail-link,
+.content-center .contact .phone-link,
+.content-center .contact .place-link {
   margin-top: 50px;
 }
 .content .carousel {
-  align-items: end;
   display: flex;
-  flex-grow: 1;
   gap: 20px;
   justify-content: space-around;
-  padding: 0 150px 0;
+  padding: 0 150px;
 }
 .content .carousel .line {
   border-bottom: solid 4px #fff;
-  height: 50px;
+  height: auto;
   width: 20vw;
 }
 .content .carousel .line:nth-child(1) {

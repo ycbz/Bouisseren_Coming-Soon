@@ -153,75 +153,78 @@ body {
     padding: 75px;
     z-index: 2;
 
-    // Compte à rebours
-    .countdown {
-        margin-top: 50px;
-        text-align: center;
+    &-center {
+        margin-bottom: auto;
+        margin-top: auto;
 
-        h1 {
-            font-size: 100px;
-            margin-block-end: 0;
-            margin-block-start: 0;
-        }
-    }
-
-    //  Description
-    .description {
-        text-align: center;
-        margin: 30px 250px;
-
-        p {
-            font-size: 18px;
-            margin-block-end: 0;
-            margin-block-start: 0;
-            padding: 0 150px 0;
-        }
-    }
-
-    // Contact
-    .contact {
-        display: flex;
-        justify-content: center;
-        gap: 200px;
-
-        a {
-            color: white;
-
-            p {
-                margin-block-start: 0;
-                margin-block-end: 0;
-            }
-        }
-
-        .mail,
-        .phone,
-        .place {
-            padding: 20px;
+        // Compte à rebours
+        .countdown {
+            margin-top: 50px;
             text-align: center;
 
-            &-icon {
-                font-size: 50px;
-                margin: 5px;
+            h1 {
+                font-size: 100px;
+                margin-block-end: 0;
+                margin-block-start: 0;
+            }
+        }
+
+        //  Description
+        .description {
+            text-align: center;
+            margin: 30px 250px;
+
+            p {
+                font-size: 18px;
+                margin-block-end: 0;
+                margin-block-start: 0;
+                padding: 0 150px 0;
+            }
+        }
+
+        // Contact
+        .contact {
+            display: flex;
+            justify-content: center;
+            gap: 200px;
+
+            a {
+                color: white;
+
+                p {
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                }
             }
 
-            &-link {
-                margin-top: 50px;
+            .mail,
+            .phone,
+            .place {
+                padding: 20px;
+                text-align: center;
+
+                &-icon {
+                    font-size: 50px;
+                    margin: 5px;
+                }
+
+                &-link {
+                    margin-top: 50px;
+                }
             }
         }
     }
 
     // Carrousel
     .carousel {
-        align-items: end;
         display: flex;
-        flex-grow: 1;
         gap: 20px;
         justify-content: space-around;
-        padding: 0 150px 0;
+        padding: 0 150px;
 
         .line {
             border-bottom: solid 4px #fff;
-            height: 50px;
+            height: auto;
             width: 20vw;
 
             &:nth-child(1) {
